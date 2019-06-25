@@ -8,14 +8,23 @@ module.exports = {
 function succeed(item) {
   if (item.enhanced < 20) {
     item.enhanced++;
-    return { ...tem };
+    return { ...item };
   } else {
-    return { ...item };  
+    return { ...item };
   }
 }
 
 function fail(item) {
-  return { ...item };
+  if (item.enhanced < 15) {
+    item.durability -= 5;
+    return { ...item };
+  } else if (item.enhanced >= 15) {
+    item.durability -= 10;
+    return { ...item };
+  } else if (item.enhanced > 16) {
+    item.enhanced -= 1;
+    return { ...item };
+  }
 }
 
 function repair(item) {

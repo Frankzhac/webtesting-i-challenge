@@ -76,7 +76,7 @@ describe('enhancer.js', () => {
       expect(true).toBe(true);
     });
     // item enhanced under 15, lose +5 durability
-    it('Item has under +15 enhancements', () => {
+    it('Item has under 15 enhancements', () => {
       let calculate = enhancer.fail(goat);
       let result = calculate.durability;
       expect(result).toBe(95);
