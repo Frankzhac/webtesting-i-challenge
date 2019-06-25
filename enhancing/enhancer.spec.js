@@ -46,3 +46,24 @@ describe('enhancer.js', () => {
     });
   });
 });
+
+// TEST SUCCESS
+describe('enhancer.js', () => {
+  describe('success() method', () => {
+    it('successful test: SUCCESS', () => {
+      expect(true).toBe(true);
+    });
+    // item enhancement at cap
+    it('Item has max enchanments', () => {
+      let calculate = enhancer.succeed(char);
+      let result = calculate.enhanced;
+      expect(result).toBe(20);
+    });
+    // item returned with +1 enhanced
+    it('should increment the item by 1', () => {
+      let calculate = enhancer.succeed(work);
+      let result = calculate.enhanced;
+      expect(result).toBe(1);
+    });
+  });
+});
