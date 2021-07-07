@@ -1,0 +1,12 @@
+{
+  "name": "webtesting-i-challenge",
+  "version": "1.0.0",
+  "description": "Web Testing I Challenge Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
